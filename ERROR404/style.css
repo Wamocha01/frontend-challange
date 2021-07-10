@@ -36,7 +36,7 @@ top: 265px;
     padding-left: 4rem;
 }
 /* h2 styling */
-.text-display h2{
+.text-display .container-text h2{
 height: 190px;
 width: 586px;
 left: 735px;
@@ -84,7 +84,7 @@ color: #fff;
 }
 /* footer styling */
 .builder {
-margin-top: 9rem;    
+margin-top: 7rem;    
 text-align: center; 
 justify-content: center;
 align-items: center; 
@@ -93,22 +93,93 @@ font-size: 14px;
 font-weight: 100;
 line-height: 17px;
 }
+/* mobile responsive */
 
+@media (max-width:800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .scarecrow-img img{
+        margin-top: -4rem;
+        height: 280px;
+        width: 350px;
+        left: 44px;
+        top: 109px;
+    }
+    .text-display{
+        margin-right: 4rem;
 
+    }
+    .text-display .container-text h2{ 
+        height: 140px;
+        width: 550px;
+        left: 24px;
+        top: 407px;  
+        line-height: 45px;  
+        letter-spacing: 10px;    
+        font-size: 48px;   
+        margin-bottom: .5rem;   
+        margin-top: -.1rem; 
+    }
+     
+    .container-text p{
+        height: 81px;
+        width: 328px;
+        left: 23px;
+        top: 579px;
+        font-size: 20px; 
+        line-height: 35px;
+        margin-top: -.8rem;  
+    }
+    .container-text .btn button{
+        height: 60px;
+        width: 200px;
+        left: 24px;
+        top: 726px;
+        
+    }
+    .builder{
+        margin-top: 3rem;
+    }
 
+}
 
+@media (max-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .scarecrow-img img{
+        margin-top: -3.4rem;
+        height: 200px;
+        width: 286px;
+        left: 40px;
+    }
+    .text-display{
+        margin-right: 7rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    .text-display .container-text h2{ 
+        height: 130px;
+        width: 350px;
+        font-size: 40px;  
+        line-height: 45px;
+        letter-spacing: 5px;
+        margin-top: 1.5rem; 
+    }
+     
+    .container-text p{
+        height: 81px;
+        width: 328px;
+        left: 23px;
+        margin-top: 1.5rem;  
+        line-height: 30px; 
+    }
+    
+    .builder{
+        margin-top: 4rem;
+    }
+}
